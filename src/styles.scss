@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+.section {
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.parallax {
+  z-index: -1 !important;
+}
+
+.parallax-container {
+  min-height: 30em !important;
+  height: auto !important;
+}
+
+.section-box {
+  min-height: 25em;
+  background-size: cover;
+  margin: 0px;
+  overflow: auto;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 3em;
+}
+
+.content {
+  font-size: 1.25em;
+}

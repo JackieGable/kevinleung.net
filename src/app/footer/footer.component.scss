@@ -1,0 +1,18 @@
+@import '../../styles.scss';
+
+.page-footer {
+  overflow: auto;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.footer-icon {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.page-footer .mdi {
+  font-size: 1.5em !important;
+}

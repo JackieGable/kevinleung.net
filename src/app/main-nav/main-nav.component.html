@@ -1,0 +1,30 @@
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a class="left black-text" href="https://github.com/kevinleung987" target="_blank" onclick="gtag('event', 'GitHub Click')"><i
+        class="mdi mdi-github-circle"></i>
+      Github</a></li>
+  <li><a class="left black-text" href="https://www.linkedin.com/in/kevin-leung987/" target="_blank" onclick="gtag('event', 'LinkedIn Click')"><i
+        class="mdi mdi-linkedin"></i>
+      LinkedIn</a></li>
+  <li><a class="left black-text" href="mailto:kevin.leung987@outlook.com" target="_top"><i class="mdi mdi-email"></i>
+      Email</a></li>
+</ul>
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper grey darken-4">
+      <a class="brand-logo">&nbsp;<img style="vertical-align:text-middle" src="favicon.ico">&nbsp;Kevin
+        Leung</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a (click)="toSection('about')" class="mobile-hidden">About</a></li>
+        <li><a (click)="toSection('experience')" class="mobile-hidden">Experience</a></li>
+        <li><a (click)="toSection('skills')" class="mobile-hidden">Skills</a></li>
+        <li><a (click)="toSection('projects')" class="mobile-hidden">Projects</a></li>
+        <li><a href="./assets/KevinLeung.pdf" target="_blank" onclick="gtag('event', 'Resume Click')">Resume<i class="mdi mdi-download right"></i></a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger tooltipped" data-position="bottom" data-tooltip="Click to expand" href="#!"
+            data-target="dropdown1">Contact/Links<i class="mdi mdi-menu-down right"></i></a></li>
+        <li><a class="tooltipped" data-position="left" data-tooltip="To the top" (click)="toTop()"><i class="mdi mdi-home"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
