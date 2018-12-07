@@ -26,6 +26,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       M.AutoInit();
+      M.Slider.init(document.querySelectorAll('.slider'));
     });
   </script>
 </head>
@@ -50,14 +51,16 @@
           Leung</a>
         <ul class="right hide-on-med-and-down">
           <li><a onclick="document.getElementsByClassName('about')[0].scrollIntoView({ behavior: 'smooth' })" class="mobile-hidden">About</a></li>
-          <li><a onclick="document.getElementsByClassName('experience')[0].scrollIntoView({ behavior: 'smooth' })" class="mobile-hidden">Experience</a></li>
+          <li><a onclick="document.getElementsByClassName('experience')[0].scrollIntoView({ behavior: 'smooth' })"
+              class="mobile-hidden">Experience</a></li>
           <li><a onclick="document.getElementsByClassName('skills')[0].scrollIntoView({ behavior: 'smooth' })" class="mobile-hidden">Skills</a></li>
           <li><a onclick="document.getElementsByClassName('projects')[0].scrollIntoView({ behavior: 'smooth' })" class="mobile-hidden">Projects</a></li>
           <li><a href="./assets/KevinLeung.pdf" target="_blank" onclick="gtag('event', 'Resume Click')">Resume<i class="mdi mdi-download right"></i></a></li>
           <!-- Dropdown Trigger -->
           <li><a class="dropdown-trigger tooltipped" data-position="bottom" data-tooltip="Click to expand" href="#!"
               data-target="dropdown1">Contact/Links<i class="mdi mdi-menu-down right"></i></a></li>
-          <li><a class="tooltipped" data-position="left" data-tooltip="To the top" onclick="window.scrollTo({ left: 0, top: 0, behavior: 'smooth' })"><i class="mdi mdi-home"></i></a></li>
+          <li><a class="tooltipped" data-position="left" data-tooltip="To the top" onclick="window.scrollTo({ left: 0, top: 0, behavior: 'smooth' })"><i
+                class="mdi mdi-home"></i></a></li>
         </ul>
       </div>
     </nav>
@@ -401,7 +404,7 @@
         <div class="col s12 l3">
           <div class="card">
             <div class="card-image">
-              <img class="materialboxed" src="assets/node.png">
+              <img class="materialboxed" src="assets/node.jpg">
             </div>
             <div class="card-content">
               <span class="card-title">Ishtar</span>
