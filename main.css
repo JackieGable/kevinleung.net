@@ -1,0 +1,155 @@
+/* Main styles */
+body {
+  margin: 0;
+}
+
+.section {
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.parallax {
+  z-index: -1 !important;
+}
+
+.parallax-container {
+  min-height: 30em !important;
+  height: auto !important;
+}
+
+.section-box {
+  min-height: 25em;
+  background-size: cover;
+  margin: 0px;
+  overflow: auto;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 3em;
+}
+
+.content {
+  font-size: 1.25em;
+}
+
+/* Navbar */
+
+.nav-bar {
+  position: fixed;
+  z-index: 500;
+}
+
+.brand-logo {
+  white-space: nowrap;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-item {
+  size: 1rem !important;
+  font-size: 1rem !important;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+/* Title */
+
+.title-icon {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 3em;
+}
+
+/* About */
+
+.profile-info {
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 20em;
+  width: 20em;
+}
+
+/* Experience */
+
+.job-company {
+  font-size: 2.5em;
+}
+
+.job-title {
+  font-size: 2em;
+}
+
+.job-info {
+  font-size: 1.5em;
+}
+
+.job-info .chip {
+  margin-left: 5px;
+}
+
+.job-details {
+  font-size: 1.25em;
+}
+
+@media only screen and (min-width: 601px) {
+  .job-details {
+    padding-left: 5em;
+  }
+}
+
+.job-details li {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.job-images {
+  width: 20em;
+  height: 10em;
+}
+
+.shaded-background {
+  background: rgba(1, 1, 1, 0.5);
+}
+
+/* Skills */
+
+.collapsible-header {
+  font-size: 1.5em;
+}
+
+/* Projects */
+
+.card-image {
+  height: 10em;
+  overflow: hidden;
+}
+
+/* Footer */
+
+.page-footer {
+  overflow: auto;
+}
+
+.footer-contents {
+  margin-bottom: 0px !important;
+}
+
+.footer-icon {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.page-footer .mdi {
+  font-size: 1.5em !important;
+}
