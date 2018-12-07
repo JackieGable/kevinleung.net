@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126818055-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-126818055-1');
+
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Kevin Leung</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.2.89/css/materialdesignicons.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      M.AutoInit();
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Dropdown -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a class="left black-text" href="https://github.com/kevinleung987" target="_blank" onclick="gtag('event', 'GitHub Click')"><i
+          class="mdi mdi-github-circle"></i>
+        Github</a></li>
+    <li><a class="left black-text" href="https://www.linkedin.com/in/kevin-leung987/" target="_blank" onclick="gtag('event', 'LinkedIn Click')"><i
+          class="mdi mdi-linkedin"></i>
+        LinkedIn</a></li>
+    <li><a class="left black-text" href="mailto:kevin.leung987@outlook.com" target="_top"><i class="mdi mdi-email"></i>
+        Email</a></li>
+  </ul>
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper grey darken-4">
+        <a class="brand-logo">&nbsp;<img style="vertical-align:text-middle" src="favicon.ico">&nbsp;Kevin
+          Leung</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a onclick="document.getElementsByClassName('about')[0].scrollIntoView({ behavior: 'smooth' })" class="mobile-hidden">About</a></li>
+          <li><a onclick="document.getElementsByClassName('experience')[0].scrollIntoView({ behavior: 'smooth' })" class="mobile-hidden">Experience</a></li>
+          <li><a onclick="document.getElementsByClassName('skills')[0].scrollIntoView({ behavior: 'smooth' })" class="mobile-hidden">Skills</a></li>
+          <li><a onclick="document.getElementsByClassName('projects')[0].scrollIntoView({ behavior: 'smooth' })" class="mobile-hidden">Projects</a></li>
+          <li><a href="./assets/KevinLeung.pdf" target="_blank" onclick="gtag('event', 'Resume Click')">Resume<i class="mdi mdi-download right"></i></a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger tooltipped" data-position="bottom" data-tooltip="Click to expand" href="#!"
+              data-target="dropdown1">Contact/Links<i class="mdi mdi-menu-down right"></i></a></li>
+          <li><a class="tooltipped" data-position="left" data-tooltip="To the top" onclick="window.scrollTo({ left: 0, top: 0, behavior: 'smooth' })"><i class="mdi mdi-home"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Title Section -->
+  <div class="parallax-container section grey-text text-lighten-3">
+    <div class="container">
+      <div class="row center">
+        <h1>Welcome!</h1>
+      </div>
+      <div class="row center">
+        <h2>I'm Kevin Leung,</h2>
+      </div>
+      <div class="row center">
+        <h4>A Computer Science student at the University of Toronto</h4>
+      </div>
+      <div class="row center">
+        <a class="grey-text text-lighten-3 title-icon tooltipped" data-position="bottom" data-tooltip="GitHub" href="https://github.com/kevinleung987"
+          target="_blank" onclick="gtag('event', 'GitHub Click')"><i class="mdi mdi-github-circle"></i>
+        </a>
+        <a class="grey-text text-lighten-3 title-icon tooltipped" data-position="bottom" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/kevin-leung987/"
+          target="_blank" onclick="gtag('event', 'LinkedIn Click')"><i class="mdi mdi-linkedin"></i>
+        </a>
+        <a class="grey-text text-lighten-3 title-icon tooltipped" data-position="bottom" data-tooltip="Email" href="mailto:kevin.leung987@outlook.com"
+          target="_top"><i class="mdi mdi-email"></i>
+        </a>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/pattern.jpg"></div>
+  </div>
+  <!-- About Section -->
+  <div class="about section-box blue-grey white-text">
+    <div class="container section">
+      <div class="row">
+        <div class="section-header">
+          About Me
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l5">
+          <div class="center">
+            <img class="profile-pic" src="assets/profilepic.jpg">
+          </div>
+          <div class="row center">
+            <div class="profile-info">
+              <i class="mdi mdi-map-marker"></i> Toronto, Ontario<br>
+              <i class="mdi mdi-school"></i> University of Toronto<br>
+              <i class="mdi mdi-book-open-page-variant"></i> Computer Science<br>
+              <i class="mdi mdi-calendar-range"></i> 2016-2020 (Expected)
+            </div>
+            <a class="btn-large blue-grey darken-4 tooltipped" data-position="bottom" data-tooltip="Click here to view my Resume"
+              href="./assets/KevinLeung.pdf" target="_blank" style="width:50%;" onclick="gtag('event', 'Resume Click')">
+              Resume
+              <i class="mdi mdi-download" style="font-size: 1em;"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col s12 l7 content">
+          <p>Hey there! I'm a third-year student studying Computer Science at the University of Toronto.
+            I am enrolled in the Specialist stream for Computer Science.</p>
+          <p>Currently seeking a 4-month or 16-month Software Engineering/Developer internship starting in
+            Summer 2019 OR a 12-month term starting in Fall 2019.</p>
+          <p>I love challenging work and am an enthusiastic learner. I enjoy working on complex problems,
+            and I'm not afraid to explore beyond my comfort zone.</p>
+          <p>I'm very passionate about technology, and love to frequent sites like YCombinator to stay up to date about
+            the latest advancements and trends in Software Development.</p>
+          <p>Currently residing in Canada where I was born and have lived my whole life. I'm an avid gamer, in my
+            off-time I love to read, play the Saxophone and work on side projects which you can find on my GitHub page.</p>
+          <p>You can find links to my GitHub, LinkedIn, or Email in the section above, in the Navigation Bar or in the
+            Footer at the bottom.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Experience Section -->
+  <div class="experience section-box blue-grey darken-4 white-text">
+    <div class="container section">
+      <div class="row">
+        <div class="section-header">
+          Experience
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="row job-company">
+            Royal Bank of Canada
+          </div>
+          <div class="row job-title">
+            Full Stack Developer Intern
+          </div>
+          <div class="row job-info">
+            <i class="mdi mdi-map-marker"></i> Toronto, Ontario<br>
+            <i class="mdi mdi-calendar-range"></i> May 2018 - September 2018<br>
+            <i class="mdi mdi-wrench"></i>
+            <div class="chip">Angular</div>
+            <div class="chip">Bootstrap</div>
+            <div class="chip">Java</div>
+            <div class="chip">Spring Boot</div>
+            <div class="chip">Jenkins</div>
+            <div class="chip">Cloud</div>
+            <div class="chip">Microservice Architecture</div>
+          </div>
+          <div class="row">
+            <div class="slider">
+              <ul class="slides">
+                <li>
+                  <img src="assets/bcas-team2.jpg">
+                  <div class="caption center-align">
+                    <h5 class="shaded-background light grey-text text-lighten-3">BCAS
+                      Team during morning standup.</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="assets/bcas-team.jpg">
+                  <div class="caption center-align black-text">
+                    <h5 class="shaded-background light grey-text text-lighten-3">BCAS
+                      team donating school supplies to children in need.</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m8">
+          <div class="row">
+            <ul class="browser-default job-details">
+              <li>Developed Full Stack Web Applications using Angular 6 and Java Spring Boot.</li>
+              <li>Embedded in the Business Credit Application Service Agile team utilizing Scrum and Continuous
+                Integration.</li>
+              <li>Worked on the development of a business-facing web application targetting for small business clients
+                of
+                RBC. The application is currently live in production.</li>
+              <li>Built responsive, interactive, client-facing web pages using Bootstrap and Angular, facilitated
+                application platform upgrade from Angular 5 to 6, retooled application build automation working with
+                Jenkins and Bash build scripts.</li>
+              <li>Developed RESTful back-end microservices in Java Spring Boot.</li>
+              <li>Utilized DevOps Continuous Integration and Cloud platform tools like Jenkins, Urban Code Deploy,
+                Cloud
+                Foundry and IBM Bluemix to build and deploy applications.</li>
+              <li>Participated in Digital Innersource to help overhaul the web presence for a non-profit organization.</li>
+              <li>Competed in RBC Summer Hack with a team of other students.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Skills Section -->
+  <div class="skills section-box orange darken-4 white-text">
+    <div class="container section">
+      <div class="row">
+        <div class="section-header">
+          Skills
+        </div>
+      </div>
+      <div class="row">
+        <div class="content">
+          Below are some of the languages, tools, and frameworks that I'm most experienced with. Click on any of them
+          to
+          see a brief description. For a full listing of what I'm familiar with, please refer to my Resume.
+        </div>
+      </div>
+      <div class="row">
+        <!-- First column of skills -->
+        <div class="col s12 m4">
+          <ul class="collapsible black-text">
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-language-python"></i>Python</div>
+              <div class="collapsible-body white">
+                <p>Comfortable with Python, I constantly use it for courses and side projects.</p>
+                <p>It's my language of choice for prototyping or scripts that are too verbose for Bash. </p>
+                <p>For example, I developed a Python script to automate a team member's data parsing task during my
+                  internship at RBC.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-language-java"></i>Java</div>
+              <div class="collapsible-body white">
+                <p>Confident with Object-Oriented programming and design.</p>
+                <p>I'm familiar with the Spring framework for Java and have used it to develop RESTful backend
+                  services.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-language-javascript"></i>Javascript</div>
+              <div class="collapsible-body white">
+                <p>Skilled at using Javascript for manipulating the browser DOM and using it for server-side code in
+                  NodeJS.</p>
+                <p>I'm proficient with Typescript and most of my recent projects utilize Javascript in some form.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-language-cpp"></i>C/C++</div>
+              <div class="collapsible-body white">
+                <p>Adept with lower level development through C/C++.</p>
+                <p>Currently taking course in Operating System fundamentals.</p>
+                <p>Exposure to writing kernel modules and other low-level code.</p>
+                <p>Familiar with CPU architectures, code compilation, etc.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-database"></i>Databases</div>
+              <div class="collapsible-body white">
+                <p>Proficient with Relational and NoSQL database systems. Adept at writing SQL queries.</p>
+                <p>I have experience in the following Relational/NoSQL DBMS: PostGreSQL, MySQL, MongoDB, and Redis.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Second column of skills -->
+        <div class="col s12 m4">
+          <ul class="collapsible black-text">
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-language-html5"></i>HTML</div>
+              <div class="collapsible-body white">
+                <p>Adept at templating with HTML, with work experience developing web pages around a spec provided
+                  by UI designers.</p>
+                <p>This website was developed without the use of any pre-built templates.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-language-css3"></i>CSS</div>
+              <div class="collapsible-body white">
+                <p>Comfortable with various CSS libraries like Bootstrap and MaterializeCSS.</p>
+                <p>Familiar with SCSS/Sass pre-processing frameworks for CSS.</p>
+                <p>Experienced in developing beautiful, Responsive pages.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-angular"></i>Angular</div>
+              <div class="collapsible-body white">
+                <p>Highly experienced in developing web pages using Angular 2+.</p>
+                <p>Work experience developing web pages in Angular at RBC. Several of my newer side projects
+                  utilize Angular for the front-end.</p>
+                <p>Currently building a desktop application using ElectronJS to bundle an Angular front-end with NodeJS
+                  back-end.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-react"></i>React</div>
+              <div class="collapsible-body white">
+                <p>Currently learning React on the side and taking 2 courses that utilize React.</p>
+                <p>Working on a large team-based project utilizing React.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-nodejs"></i>NodeJS</div>
+              <div class="collapsible-body white">
+                <p>Experienced with developing back-end web services in NodeJS.</p>
+                <p>Proficient in several popular NodeJS frameworks like ExpressJS and MeteorJS</p>
+                <p>Several of my side projects use NodeJS to power the back-end.</p>
+                <p>Currently building a desktop application using ElectronJS to bundle an Angular front-end with NodeJS
+                  back-end.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Third column of skills -->
+        <div class="col s12 m4">
+          <ul class="collapsible black-text">
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-console"></i>Bash</div>
+              <div class="collapsible-body white">
+                <p>Very comfortable in Command-Line-Interface environments and Linux/Unix-based systems.</p>
+                <p>Experienced in developing Bash scripts to automate tasks.</p>
+                <p>Developed a build automation script in Bash for Jenkins while at RBC.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-git"></i>Git</div>
+              <div class="collapsible-body white">
+                <p>Experienced in working with multiple developers in a team on a large code-base.</p>
+                <p>Familiar with standard practices for collaborative development like Pull Requests.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-docker"></i>Docker</div>
+              <div class="collapsible-body white">
+                <p>Knowledgeable with containerization and other cloud technologies.</p>
+                <p>Currently using Docker for containerization in my Ishtar project.</p>
+                <p>My personal home-server currently runs a half-dozen Docker containers for applications like Plex
+                  Media
+                  Server and Jenkins.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-developer-board"></i>DevOps</div>
+              <div class="collapsible-body white">
+                <p>Experienced in Continuous Integration tools like Jenkins and Travis.</p>
+                <p>Skilled in build/test automation and automated deployment.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi mdi-teach"></i>Agile Development</div>
+              <div class="collapsible-body white">
+                <p>Well-acquainted with Agile development methods.</p>
+                <p>Experienced in working in a Agile team utilizing Scrum and Continuous Integration.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Projects Section -->
+  <div class="projects section parallax-container">
+    <div class="container section">
+      <div class="row grey-text text-lighten-3">
+        <div class="section-header">
+          Projects
+        </div>
+      </div>
+      <div class="row content grey-text text-lighten-3 center">
+        <p>Just some of the side projects that I've worked on recently. GitHub links are provided for any open-source
+          project of mine listed.</p>
+      </div>
+      <div class="row">
+        <div class="col s12 l3">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="assets/electrontools.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title">EVE Electron Tools</span>
+              <p>Desktop application built using ElectronJS to bundle a web app made in Angular, Bootstrap
+                and NodeJS. Aggregates data through various RESTful APIs and models the data visually.</p>
+            </div>
+            <div class="card-action">
+              <div class="chip">Angular</div>
+              <div class="chip">Bootstrap</div>
+              <div class="chip">NodeJS</div>
+              <div class="chip">ElectronJS</div>
+              <div class="chip">TypeScript</div>
+            </div>
+            <div class="card-action">
+              <a class="left">Active</a>
+              <a href="https://github.com/kevinleung987/eve-electron-tools">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l3">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="assets/node.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Ishtar</span>
+              <p>Dockerized chat-bot for the messaging platform Discord. The backend is
+                written in NodeJS with persistent storage handled by MongoDB and the user-facing frontend is written in
+                Python. Continuous Integration is handled by Travis CI which runs automated testing, builds and deploys
+                the Docker image.</p>
+            </div>
+            <div class="card-action">
+              <div class="chip">Docker</div>
+              <div class="chip">NodeJS</div>
+              <div class="chip">MongoDB</div>
+              <div class="chip">Python</div>
+              <div class="chip">Travis</div>
+              <div class="chip">RESTful</div>
+            </div>
+            <div class="card-action">
+              <a class="left">Active</a>
+              <a href="https://github.com/kevinleung987/ishtar">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l3">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="assets/warden.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Warden</span>
+              <p>Customizable image recognition tool written in Python using Google Tesseract and
+                Pillow to to enable recognition and classification of
+                important UI elements.</p>
+            </div>
+            <div class="card-action">
+              <div class="chip">Python</div>
+              <div class="chip">Image Recognition</div>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/kevinleung987/EVE-Warden">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l3">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="assets/tagger.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title black-text">Java Image Tagger</span>
+              <p>Local image tagging GUI made in Java using JavaFX. Collaborative project with other
+                students.</p>
+            </div>
+            <div class="card-action">
+              <div class="chip">Java</div>
+              <div class="chip">JavaFX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/pattern2.jpg"></div>
+  </div>
+  <!-- Footer -->
+  <div class="page-footer black">
+    <div class="container">
+      <div class="row white-text footer-contents">
+        <div class="col s8">
+          Kevin Leung - This site was built using MaterializeCSS and Material Design Icons.
+        </div>
+        <div class="col s4 white-text">
+          <div class="row">
+            <a class="white-text footer-icon right" href="https://github.com/kevinleung987" target="_blank"><i class="mdi mdi-github-circle"></i>
+            </a>
+            <a class="white-text footer-icon right" href="https://www.linkedin.com/in/kevin-leung987/" target="_blank"><i
+                class="mdi mdi-linkedin"></i>
+            </a>
+            <a class="white-text footer-icon right" href="mailto:kevin.leung987@outlook.com" target="_top"><i class="mdi mdi-email"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
