@@ -131,7 +131,7 @@ body {
 /* Projects */
 
 .card-image {
-  min-height: 15em;
+  min-height: 5em;
   overflow: hidden;
 }
 
