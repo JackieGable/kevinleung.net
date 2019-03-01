@@ -35,6 +35,8 @@
     document.addEventListener('DOMContentLoaded', function () {
       M.AutoInit();
       M.Slider.init(document.querySelectorAll('.slider'));
+      let options = { year: 'numeric', month: 'long', day: 'numeric' };
+      document.querySelector("#lastUpdated").innerHTML = new Date(document.lastModified).toLocaleDateString("en-US", options);
     });
   </script>
 </head>
@@ -159,10 +161,11 @@
           <p>Currently seeking a Software Engineering/Developer internship starting in Fall 2019.</p>
           <p>I love challenging work and am an enthusiastic learner. I enjoy working on complex problems, and I'm not
             afraid to explore beyond my comfort zone.</p>
-          <p>I'm very passionate about technology, and love to frequent sites like YCombinator to stay up to date about
+          <p>I'm very passionate about technology, and love to frequent sites like Hacker News to stay up to date about
             the latest advancements and trends in Software Development.</p>
           <p>Currently residing in Canada where I was born and have lived my whole life. I'm an avid gamer, in my
-            off-time I love to read, play the Saxophone and work on side projects which you can find on my GitHub page.</p>
+            off-time I love to read, play the Saxophone and work on side projects which you can find on my GitHub page.
+          </p>
           <p>You can find links to my GitHub, LinkedIn, or Email in the section above, in the Navigation Bar or in the
             Footer at the bottom.</p>
         </div>
@@ -223,9 +226,10 @@
                 application platform upgrade from Angular 5 to 6, retooled application build automation working with
                 Jenkins and Bash build scripts.</li>
               <li>Developed RESTful back-end microservices in Java Spring Boot.</li>
-              <li>Utilized DevOps Continuous Integration and Cloud platform tools like Jenkins, Urban Code Deploy,
-                Cloud Foundry and IBM Bluemix to build and deploy applications.</li>
-              <li>Participated in Digital Innersource to help overhaul the web presence for a non-profit organization.</li>
+              <li>Utilized DevOps Continuous Integration and Cloud platform tools like Jenkins, Urban Code Deploy, Cloud
+                Foundry and IBM Bluemix to build and deploy applications.</li>
+              <li>Participated in Digital Innersource to help overhaul the web presence for a non-profit organization.
+              </li>
               <li>Competed in RBC Summer Hack with a team of other students.</li>
             </ul>
           </div>
@@ -234,15 +238,15 @@
     </div>
   </div>
   <!-- Skills Section -->
-  <div class="skills section-box orange darken-4 white-text">
+  <div class="skills section-box deep-orange darken-4 white-text">
     <div class="container section">
       <div class="row">
         <div class="section-header"> Skills </div>
       </div>
       <div class="row">
         <div class="content"> Below are some of the languages, tools, and frameworks that I'm most experienced with.
-          Click on any of them to see a brief description. For a full listing of what I'm familiar with, please refer
-          to my Resume. </div>
+          Click on any of them to see a brief description. For a full listing of what I'm familiar with, please refer to
+          my Resume. </div>
       </div>
       <div class="row">
         <!-- First column of skills -->
@@ -252,7 +256,7 @@
               <div class="collapsible-header"><i class="mdi mdi-language-python"></i>Python</div>
               <div class="collapsible-body white">
                 <p>Comfortable with Python, I constantly use it for courses and side projects.</p>
-                <p>It's my language of choice for prototyping or scripts that are too verbose for Bash. </p>
+                <p>It's my language of choice for prototyping or scripts that are too verbose for Bash.</p>
                 <p>For example, I developed a Python script to automate a team member's data parsing task during my
                   internship at RBC.</p>
               </div>
@@ -261,16 +265,16 @@
               <div class="collapsible-header"><i class="mdi mdi-language-java"></i>Java</div>
               <div class="collapsible-body white">
                 <p>Confident with Object-Oriented programming and design.</p>
-                <p>I'm familiar with the Spring framework for Java and have used it to develop RESTful backend
-                  services.</p>
+                <p>I'm familiar with the Spring framework for Java and have used it to develop RESTful backend services.
+                </p>
               </div>
             </li>
             <li>
               <div class="collapsible-header"><i class="mdi mdi-language-javascript"></i>Javascript</div>
               <div class="collapsible-body white">
-                <p>Skilled at using Javascript for manipulating the browser DOM and using it for server-side code in
-                  NodeJS.</p>
-                <p>I'm proficient with Typescript and most of my recent projects utilize Javascript in some form.</p>
+                <p>Skilled at using Javascript for building elegant front-end UIs or writing server-side code in NodeJS.
+                </p>
+                <p>I'm proficient with Typescript and most of my recent projects utilize it.</p>
               </div>
             </li>
             <li>
@@ -297,8 +301,8 @@
             <li>
               <div class="collapsible-header"><i class="mdi mdi-language-html5"></i>HTML</div>
               <div class="collapsible-body white">
-                <p>Adept at templating with HTML, with work experience developing web pages around a spec provided by
-                  UI designers.</p>
+                <p>Adept at templating with HTML, with work experience developing web pages around a spec provided by UI
+                  designers.</p>
                 <p>This website was developed without the use of any pre-built templates.</p>
               </div>
             </li>
@@ -404,9 +408,9 @@
             </div>
             <div class="card-content">
               <span class="card-title">EVE Electron Tools</span>
-              <p>Desktop application built using Electron, Angular and Bootstrap. Electron-powered toolset for the
-                video game EVE Online. Includes tools for data visualization, bulk text parsing, orchestrating large
-                data queries to the game server, listening & filtering events received via WebSocket.</p>
+              <p>Desktop application built using Electron, Angular and Bootstrap. Electron-powered toolset for the video
+                game EVE Online. Includes tools for data visualization, bulk text parsing, orchestrating large data
+                queries to the game server, listening & filtering events received via WebSocket.</p>
             </div>
             <div class="card-action">
               <div class="chip">Angular</div>
@@ -430,16 +434,14 @@
             </div>
             <div class="card-content">
               <span class="card-title">Ishtar</span>
-              <p>Dockerized chat-bot for the messaging platform Discord. The backend is written in NodeJS with
-                persistent storage handled by MongoDB and the user-facing frontend is written in Python. Continuous
-                Integration is handled by Travis CI which runs automated testing, builds and deploys the Docker image.</p>
+              <p>Dockerized chat-bot for the messaging platform Discord. The backend is written in NodeJS with Express
+                and TypeScript.</p>
             </div>
             <div class="card-action">
               <div class="chip">NodeJS</div>
-              <div class="chip">MongoDB</div>
+              <div class="chip">TypeScript</div>
               <div class="chip">Docker</div>
-              <div class="chip">Python</div>
-              <div class="chip">Travis</div>
+              <div class="chip">Heroku</div>
               <div class="chip">REST API</div>
             </div>
             <div class="card-action">
@@ -506,13 +508,13 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="assets/pattern2.jpg"></div>
+    <div class="parallax"><img src="assets/pattern.jpg" alt="Pattern"></div>
   </div>
   <!-- Footer -->
   <div class="page-footer black">
     <div class="container">
       <div class="row white-text footer-contents">
-        <div class="col s8"> Kevin Leung - This site was built using MaterializeCSS and Material Design Icons. </div>
+        <div class="col s8"> Kevin Leung - Last updated <span id="lastUpdated"></span> </div>
         <div class="col s4 white-text">
           <div class="row">
             <a class="white-text footer-icon right"
