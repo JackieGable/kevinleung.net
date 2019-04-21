@@ -131,7 +131,7 @@ body {
 /* Projects */
 
 .card-image {
-  min-height: 5em;
+  height: 10em;
   overflow: hidden;
 }
 
@@ -139,7 +139,6 @@ body {
 
 .page-footer {
   overflow: auto;
-  
 }
 
 .footer-contents {
@@ -150,7 +149,7 @@ body {
   padding-left: 1em;
   padding-right: 1em;
 }
-
+1
 .page-footer .mdi {
   font-size: 1.5em !important;
 }
