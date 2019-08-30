@@ -16,8 +16,17 @@
       gtag("config", "UA-126818055-1");
     </script>
     <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Computer Science student at the University of Toronto with a passion for building great products."
+    />
+    <meta name="author" content="Kevin Leung" />
+    <meta
+      name="keywords"
+      content="Kevin Leung, Computer Science, University of Toronto, Software Engineering"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex,nofollow" />
+    <meta property="og:image" content="http://kevinleung.net/logo.png" />
     <title>Kevin Leung</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="main.css" />
@@ -34,6 +43,11 @@
       document.addEventListener("DOMContentLoaded", function() {
         M.AutoInit();
         M.Slider.init(document.querySelectorAll(".slider"));
+        M.Carousel.init(document.querySelectorAll(".carousel"), {
+          fullWidth: true,
+          indicators: true
+        });
+        // Last Updated text in footer
         let options = { year: "numeric", month: "long", day: "numeric" };
         document.querySelector("#lastUpdated").innerHTML = new Date(
           document.lastModified
@@ -220,9 +234,14 @@
           </div>
           <div class="col s12 l7 content">
             <p>
-              Hey there! I'm a third-year student studying Computer Science at
-              the University of Toronto. Currently enrolled in the Specialist
-              stream for Computer Science.
+              Hey there! I'm a student at the University of Toronto studying
+              Computer Science. Presently enrolled in the Specialist stream for
+              Computer Science.
+            </p>
+            <p>
+              Currently I'm interning at Flexport in San Francisco, a
+              freight-forwarding startup looking to disrupt the Shipping
+              industry.
             </p>
             <p>
               I love challenging work and am an enthusiastic learner. I enjoy
@@ -232,7 +251,7 @@
             <p>
               I'm very passionate about technology, and love to frequent sites
               like Hacker News to stay up to date about the latest advancements
-              and trends in Software Development.
+              and trends in technology.
             </p>
             <p>
               I'm an avid gamer, in my off-time I love to read, play the
@@ -253,6 +272,43 @@
         <div class="row">
           <div class="section-header">Experience</div>
         </div>
+        <!-- Flexport -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="row job-company">
+              <a href="https://www.flexport.com/" class="link"
+                ><img src="/assets/flexport-logo.svg" class="logo"
+              /></a>
+            </div>
+            <div class="row job-title">Software Engineer Intern</div>
+            <div class="row job-info">
+              <i class="mdi mdi-map-marker"></i> San Francisco, California<br />
+              <i class="mdi mdi-calendar-range"></i> September 2019 - Present<br />
+              <i class="mdi mdi-wrench"></i>
+              <div class="chip">React</div>
+              <div class="chip">Flow</div>
+              <div class="chip">Ruby on Rails</div>
+            </div>
+          </div>
+          <div class="col s12 m8">
+            <div class="row">
+              <ul class="browser-default job-details">
+                <li>
+                  Flexport is a modern freight forwarding and customs brokerage
+                  startup based in San Francisco, California. Flexport brings
+                  together advanced technology and data analytics, logistics
+                  infrastructure, and supply chain expertise to deliver a
+                  dramatically better experience.
+                </li>
+                <li>
+                  Full-Stack web development using Flow-typed React and Ruby on
+                  Rails on the Finance team.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
         <!-- Blend Labs -->
         <div class="row">
           <div class="col s12 m4">
@@ -320,7 +376,7 @@
                 </li>
                 <li>
                   Full Stack Web Development using React with Redux and NodeJS
-                  with TypeScript.
+                  in TypeScript.
                 </li>
                 <li>
                   Part of the Consumer Banking team working on scaling Blend's
@@ -336,10 +392,11 @@
                   flag applications based on specified criteria.
                 </li>
                 <li>
-                  Developed a vendor-agnostic identity verification integration to automate application decisioning for our clients.
+                  Developed a vendor-agnostic identity verification integration
+                  to automate application decisioning for our clients.
                 </li>
                 <li>
-                  Competed as a finalist in internal BlendHacks hackathon.
+                  Competed as a finalist in the internal BlendHacks hackathon.
                 </li>
               </ul>
             </div>
@@ -351,7 +408,7 @@
           <div class="col s12 m4">
             <div class="row job-company">
               <img src="/assets/rbc-logo-shield.svg" class="mini-logo" />
-              <a href="https://www.rbcroyalbank.com/" class="link"
+              <a href="https://www.rbcroyalbank.com/" class="link white-text"
                 >Royal Bank of Canada</a
               >
             </div>
@@ -552,21 +609,74 @@
         <div class="row content grey-text text-lighten-3 center">
           <p>
             Some of the side projects that I've worked on recently. GitHub links
-            are provided where applicable. Click on any image to expand it.
+            are provided where applicable. Drag to view a different project in
+            the carousel, or click the indicators at the bottom.
           </p>
         </div>
-        <div class="row">
-          <!-- EVE Electron Tools -->
-          <div class="col s12 l4 project-item">
+        <div class="row carousel carousel-slider center">
+          <!-- Ishtar -->
+          <div class="carousel-item project-item center">
             <div class="card">
               <div class="card-image">
-                <img
-                  class="materialboxed project-image"
-                  src="assets/electrontools.jpg"
-                />
+                <img class="project-image" src="assets/node.jpg" />
               </div>
               <div class="card-content">
-                <span class="card-title">EVE Electron Tools</span>
+                <a
+                  href="https://github.com/kevinleung987/ishtar"
+                  class="card-title link"
+                  >Ishtar</a
+                >
+                <p>
+                  Dockerized chat-bot for the messaging platform Discord. The
+                  backend is written in NodeJS with Express and TypeScript. The
+                  frontend is written in React.
+                </p>
+              </div>
+              <div class="card-action">
+                <div class="chip">NodeJS</div>
+                <div class="chip">React</div>
+                <div class="chip">TypeScript</div>
+                <div class="chip">Docker</div>
+                <div class="chip">Heroku</div>
+                <div class="chip">REST API</div>
+              </div>
+            </div>
+          </div>
+          <!-- Lumen -->
+          <div class="carousel-item project-item center">
+            <div class="card">
+              <div class="card-image">
+                <img class="project-image" src="assets/lumen.jpg" />
+              </div>
+              <div class="card-content">
+                <a
+                  href="https://github.com/vinaykomaravolu/Lumen"
+                  class="card-title link"
+                  >Lumen</a
+                >
+                <p>
+                  3D Platformer with growing/shrinking mechanics and vibrant
+                  visuals. Built on the Unity game engine.
+                </p>
+              </div>
+              <div class="card-action">
+                <div class="chip">Unity</div>
+                <div class="chip">C#</div>
+              </div>
+            </div>
+          </div>
+          <!-- EVE Electron Tools -->
+          <div class="carousel-item project-item center">
+            <div class="card">
+              <div class="card-image">
+                <img class="project-image" src="assets/electrontools.jpg" />
+              </div>
+              <div class="card-content">
+                <a
+                  href="https://github.com/kevinleung987/eve-electron-tools"
+                  class="card-title link"
+                  >EVE Electron Tools</a
+                >
                 <p>
                   Desktop application built using Electron, Angular and
                   Bootstrap. Electron-powered toolset for the video game EVE
@@ -582,78 +692,37 @@
                 <div class="chip">ElectronJS</div>
                 <div class="chip">TypeScript</div>
               </div>
-              <div class="card-action">
-                <a href="https://github.com/kevinleung987/eve-electron-tools"
-                  >GitHub</a
+            </div>
+          </div>
+          <!-- Warden -->
+          <div class="carousel-item project-item center">
+            <div class="card">
+              <div class="card-image">
+                <img class="project-image" src="assets/warden.jpg" />
+              </div>
+              <div class="card-content">
+                <a
+                  href="https://github.com/kevinleung987/EVE-Warden"
+                  class="card-title link"
+                  >Warden</a
                 >
-              </div>
-            </div>
-          </div>
-          <!-- Ishtar -->
-          <div class="col s12 l4 project-item">
-            <div class="card">
-              <div class="card-image">
-                <img
-                  class="materialboxed project-image"
-                  src="assets/node.jpg"
-                />
-              </div>
-              <div class="card-content">
-                <span class="card-title">Ishtar</span>
                 <p>
-                  Dockerized chat-bot for the messaging platform Discord. The
-                  backend is written in NodeJS with Express and TypeScript. The
-                  frontend is written in React.
+                  Customizable image recognition tool written in Python using
+                  Google Tesseract and Pillow to to enable recognition and
+                  classification of important UI elements.
                 </p>
               </div>
               <div class="card-action">
-                <div class="chip">NodeJS</div>
-                <div class="chip">React</div>
-                <div class="chip">TypeScript</div>
-                <div class="chip">Docker</div>
-                <div class="chip">Heroku</div>
-                <div class="chip">REST API</div>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/kevinleung987/ishtar">GitHub</a>
+                <div class="chip">Python</div>
+                <div class="chip">Image Recognition</div>
               </div>
             </div>
           </div>
-          <!-- Lumen -->
-          <div class="col s12 l4 project-item">
-            <div class="card">
-              <div class="card-image">
-                <img
-                  class="materialboxed project-image"
-                  src="assets/lumen.jpg"
-                />
-              </div>
-              <div class="card-content">
-                <span class="card-title">Lumen</span>
-                <p>
-                  3D Platformer with growing/shrinking mechanics and vibrant
-                  visuals. Built on the Unity game engine.
-                </p>
-              </div>
-              <div class="card-action">
-                <div class="chip">Unity</div>
-                <div class="chip">C#</div>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/vinaykomaravolu/Lumen">GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
           <!-- Ekko Chat -->
-          <div class="col s12 l4 project-item">
+          <div class="carousel-item project-item center">
             <div class="card">
               <div class="card-image">
-                <img
-                  class="materialboxed project-image"
-                  src="assets/ekko.jpg"
-                />
+                <img class="project-image" src="assets/ekko.jpg" />
               </div>
               <div class="card-content">
                 <span class="card-title black-text">Ekko Chat</span>
@@ -669,40 +738,11 @@
               </div>
             </div>
           </div>
-          <!-- Warden -->
-          <div class="col s12 l4 project-item">
-            <div class="card">
-              <div class="card-image">
-                <img
-                  class="materialboxed project-image"
-                  src="assets/warden.jpg"
-                />
-              </div>
-              <div class="card-content">
-                <span class="card-title">Warden</span>
-                <p>
-                  Customizable image recognition tool written in Python using
-                  Google Tesseract and Pillow to to enable recognition and
-                  classification of important UI elements.
-                </p>
-              </div>
-              <div class="card-action">
-                <div class="chip">Python</div>
-                <div class="chip">Image Recognition</div>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/kevinleung987/EVE-Warden">GitHub</a>
-              </div>
-            </div>
-          </div>
           <!-- Java Image Tagger -->
-          <div class="col s12 l4 project-item">
+          <div class="carousel-item project-item center">
             <div class="card">
               <div class="card-image">
-                <img
-                  class="materialboxed project-image"
-                  src="assets/tagger.jpg"
-                />
+                <img class="project-image" src="assets/tagger.jpg" />
               </div>
               <div class="card-content">
                 <span class="card-title black-text">Java Image Tagger</span>

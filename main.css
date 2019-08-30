@@ -34,7 +34,6 @@ body {
 }
 
 .link {
-  color: white !important;
   text-decoration: underline !important;
 }
 
@@ -131,6 +130,10 @@ body {
   height: 1em;
 }
 
+.logo {
+  height: 1em;
+}
+
 /* Skills */
 
 .collapsible-header {
@@ -158,6 +161,26 @@ body {
   padding-left: 1em;
   padding-right: 1em;
 }
+
 .page-footer .mdi {
   font-size: 1.5em !important;
+}
+
+.carousel {
+  min-height: 75vh;
+}
+
+.indicators {
+  background-color: black;
+  opacity: 0.5 !important;
+}
+
+@media only screen and (min-width: 992px) {
+  .project-item {
+    width: 50% !important;
+  }
+
+  .carousel {
+    min-height: 50vh;
+  }
 }
